@@ -1,26 +1,36 @@
 <template>
-  <header>
-    <h1>Ian Duncan McKenzie</h1>
-    <h3>Software Developer</h3>
-    <div class = "links">
-      <a href="https://github.com/Gleep-idm?tab=repositories">GitHub</a>
-      ·
-      <a href="https://www.linkedin.com/in/ian-mckenzie-05a8a2149">LinkedIn</a>
-      ·
-      <a href="mailto: ianmckenzie000@gmail.com">Email</a>
-    </div>
-  </header>
+  <div class="main">
+    <div class="banner">
 
-  <div class="row">
-    <div class="col">
-      <button class="button resume" title="Resume"><img src = "./assets/resume.png"></button>
-      <button class="button work" title="Work Experience"><img src = "./assets/work.png"></button>
-      <button class="button research" title="Research Interests"><img src = "./assets/research.png"></button>
     </div>
-    <div class="col">
-      <button class="button projects" title="Personal Projects"><img src = "./assets/projects.png"></button>
-      <button class="button school" title="Education"><img src = "./assets/school.png"></button>
-      <button class="button hobbies" title="Hobbies"><img src = "./assets/hobbies.png"></button>
+    <div class = "mid">
+      <header>
+        <h1>Ian Duncan McKenzie</h1>
+        <h3>Software Developer</h3>
+        <div class = "links">
+          <a href="https://github.com/Gleep-idm?tab=repositories">GitHub</a>
+          ·
+          <a href="https://www.linkedin.com/in/ian-mckenzie-05a8a2149">LinkedIn</a>
+          ·
+          <a href="mailto: ianmckenzie000@gmail.com">Email</a>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col">
+          <button class="button resume" title="Resume"><img src = "./assets/resume.png"></button>
+          <button class="button work" title="Work Experience"><img src = "./assets/work.png"></button>
+          <button class="button research" title="Research Interests"><img src = "./assets/research.png"></button>
+        </div>
+        <div class="col">
+          <button class="button projects" title="Personal Projects"><img src = "./assets/projects.png"></button>
+          <button class="button school" title="Education"><img src = "./assets/school.png"></button>
+          <button class="button hobbies" title="Hobbies"><img src = "./assets/hobbies.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+
     </div>
   </div>
 </template>
@@ -37,8 +47,7 @@ export default {
 
 #app {
   margin: 0 auto;
-  padding: 2rem;
-
+  height: 100%;
   font-weight: normal;
 }
 
@@ -49,10 +58,45 @@ export default {
   font-size: 15px;
 }
 
+.main{
+  min-height:100%;
+  overflow: auto;
+}
+
+.main:after {
+  display:table;
+  content:"";
+  clear:both;
+}
+
 .row:after {
   display:table;
   content:"";
   clear:both;
+}
+
+.mid {
+  float: left;
+  width: 50%;
+  border-width: 12px;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  height: 100vh;
+  border-image:
+    linear-gradient(
+    to right,
+    #000000,
+    gray,
+    #000000
+    )1 100%;
+}
+
+.banner{
+  background-image: url(./assets/banner.jpg);
+  height: 100vh;
+  float: left;
+  width: 25%;
 }
 
 .col {
