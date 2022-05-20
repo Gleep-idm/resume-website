@@ -1,20 +1,29 @@
-# resume-website
-A Vue based website resume
+# -resume
 
-# install dependencies
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
 npm install
+```
 
-# serve with hot reload at localhost:8080
+### Compile and Hot-Reload for Development
+
+```sh
 npm run dev
+```
 
-# build for production with minification
+### Compile and Minify for Production
+
+```sh
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+```
