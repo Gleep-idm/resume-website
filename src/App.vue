@@ -6,19 +6,21 @@
       <a href="https://github.com/Gleep-idm?tab=repositories">GitHub</a>
       ·
       <a href="https://www.linkedin.com/in/ian-mckenzie-05a8a2149">LinkedIn</a>
+      ·
+      <a href="mailto: ianmckenzie000@gmail.com">Email</a>
     </div>
   </header>
 
   <div class="row">
     <div class="col">
-      <button class="button"><img src = "./assets/resume.png"></button>
-      <button class="button"><img src = "./assets/work.png"></button>
-      <button class="button"><img src = "./assets/research.png"></button>
+      <button class="button resume" title="Resume"><img src = "./assets/resume.png"></button>
+      <button class="button work" title="Work Experience"><img src = "./assets/work.png"></button>
+      <button class="button research" title="Research Interests"><img src = "./assets/research.png"></button>
     </div>
     <div class="col">
-      <button class="button"><img src = "./assets/projects.png"></button>
-      <button class="button"><img src = "./assets/school.png"></button>
-      <button class="button"><img src = "./assets/hobbies.png"></button>
+      <button class="button projects" title="Personal Projects"><img src = "./assets/projects.png"></button>
+      <button class="button school" title="Education"><img src = "./assets/school.png"></button>
+      <button class="button hobbies" title="Hobbies"><img src = "./assets/hobbies.png"></button>
     </div>
   </div>
 </template>
@@ -38,6 +40,13 @@ export default {
   padding: 2rem;
 
   font-weight: normal;
+}
+
+.button[title]:hover::after {
+  content: attr(title);
+  color: #000000;
+  padding-top: 1.5rem;
+  font-size: 15px;
 }
 
 .row:after {
