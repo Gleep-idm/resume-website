@@ -7,7 +7,14 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "vue": "^3.2.33"
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "primeicons": "^5.0.0",
+    "primevue": "^3.12.6",
+    "vue": "^3.2.33",
+    "vuestic-ui": "^1.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
